@@ -1,0 +1,46 @@
+{
+  "name": "@dimensionalpocket/fps",
+  "version": "0.0.0",
+  "description": "A frames-per-second calculator for Javascript.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npm run lint && NODE_ENV=test c8 mocha",
+    "lint": "standardx --fix --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimensionalpocket/fps-js.git"
+  },
+  "author": "dimensionalpocket.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dimensionalpocket/fps-js/issues"
+  },
+  "homepage": "https://github.com/dimensionalpocket/fps-js#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@dimensionalpocket/development": "github:dimensionalpocket/development-js#1.0.2"
+  },
+  "babel": {
+    "extends": "./node_modules/@dimensionalpocket/development/babel"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/@dimensionalpocket/development/eslint"
+  },
+  "mocha": {
+    "recursive": true,
+    "reporter": "spec",
+    "colors": true
+  },
+  "c8": {
+    "extends": "./node_modules/@dimensionalpocket/development/c8/default.json",
+    "include": [
+      "index.js",
+      "src"
+    ]
+  },
+  "engines": {
+    "node": ">= 16.14.2"
+  }
+}
