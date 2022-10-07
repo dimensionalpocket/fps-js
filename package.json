@@ -1,6 +1,6 @@
 {
   "name": "@dimensionalpocket/fps",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A frames-per-second calculator for Javascript.",
   "main": "index.js",
   "type": "module",
