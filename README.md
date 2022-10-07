@@ -29,8 +29,8 @@ fps.average()
 
 // Usage with reactive libs
 fps.total            // returns the sum of all given values
-fps.size             // the size of the buffer
-fps.total / fps.size // average FPS
+fps.size             // the sample count
+fps.total / fps.size // the average value
 fps.max              // the largest value (resets every 10 iterations)
 ```
 

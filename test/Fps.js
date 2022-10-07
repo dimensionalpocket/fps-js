@@ -1,7 +1,7 @@
 import { expect } from '@dimensionalpocket/development'
 import { Fps } from '../src/Fps.js'
 
-describe('lib/Fps', function () {
+describe('Fps', function () {
   describe('constructor', function () {
     it('initializes with defaults', function () {
       var fps = new Fps()
